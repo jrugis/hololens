@@ -1,0 +1,150 @@
+***************************************************
+***************************************************
+Windows 1703 build 15063.540 (winver)
+Unity 2017.2.0b5
+  HoloToolkit
+Hololens 14393.1593.x86fre.rs1_release.170731-1934
+
+***************************************************
+***************************************************
+git count-objects -vH
+
+***************************************************
+***************************************************
+Blender 2.78
+  mesh object, without material
+  export fbx | Main | Selected Objects | Mesh
+
+Unity 2017.2.0b5
+  drag & drop fbx asset
+  drag & drop model into Hierarchy
+  create materials
+  drag & drop material on objects
+
+***************************************************
+***************************************************
+Windows 10
+----------
+
+Chrome 192.168.1.77 - Hololens device portal
+  Mixed Reality Capture | Live preview
+
+Settings | Update & security | 
+  for developers | Developer mode
+
+***************************************************
+***************************************************
+Unity 2017.2.0b5 - app
+----------------------
+
+New
+  3D
+
+Camera
+  Clear Flags | Solid Color
+  Background | black
+  Clipping Planes | 
+    Near | 0.3
+    Far | 10
+
+File | Save Scene As 
+
+File | Build Settings
+  Universal Windows Platform
+    Target device | Hololens
+    Build Type | D3D
+    SDK | Latest installed
+    Build and Run on | Local Machine
+    Compression method | None
+  Switch Platform  
+
+Edit | Project Settings | Quality
+  Universal Windows Platform | Default | Very Low
+
+Edit | Project Settings | Player
+  Other Settings | Configuration | Scripting Backend | .NET
+  Publishing Settings | Capabilities | WebCam, Microphone
+  Universal Windows Platform | XR Settings
+    Virtual Reality Supported
+    Virtual Reality SDks
+      Windows Mixed Reality
+
+File | Build Settings | 
+  Add Open Scenes
+  Debugging | Unity C# Projects
+
+File | Build Settings | Build
+  New folder | App (note: inside project folder)
+  Select Folder
+
+******************************
+Window | Holographic Emulation
+  Emulation Mode | Remote to Device
+    Disconnect
+    Emulation Mode | None
+******************************
+Window | Holographic Emulation
+  Simulate in Editor
+    Default Room
+******************************
+open App folder, double click .sln
+MS Visual Studio
+  Release, x86, Remote Machine (for Wi-Fi)
+  Project | Properties | Configuration Properties | Debugging
+    Machine Name | 192.168.1.77 | Apply
+    Debug | Start Without Debugging
+  Release, x86, Device (for USB)
+    Debug | Start Without Debugging
+    Hololens: Update & Security | Pair device | pin#
+  Release, x86, Hololens Emulator (emulator)
+    Debug | Start Without Debugging
+
+Window | Lighting | Settings
+  Environment Lighting |
+    Color | 0.4 | Realtime
+
+MS Visual Studio
+  Package.appxmanifest | Capabilities | Microphone
+
+***************************************************
+***************************************************
+Hololens
+--------
+
+  APP: Hololens Remoting Player
+
+  Settings | Devices | Bluetooth | On
+  Update & Security
+    Settings | For developers | Device Portal | On
+  Update & Security | Device update | Check for updates
+
+***************************************************
+***************************************************
+CREATE APP PACKAGE
+MS Visual Studio
+  <right-click> solution | Store | Create AppPackages |
+     No | x86
+
+HOLOLENS SIDELOAD
+Hololens (device portal)
+  System | Apps 
+    Remove
+    Install app | 
+      App package | Choose file
+        (xxx/App/AppPackages/xxx/xxx/xx.appx)
+      Add dependency | Choose file
+        (Dependencies/x86/xx.appx)
+      Go
+
+***************************************************
+***************************************************
+XBOX CONTROLLER TEST
+--------------------
+Control Panel | Devices and Printers
+<RClick> Xbox 360 Wireless controller
+Game controller settings | Properties
+
+***************************************************
+***************************************************
+***************************************************
+***************************************************
