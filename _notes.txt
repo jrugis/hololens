@@ -116,6 +116,10 @@ MS Visual Studio
 ***************************************************
 Hololens
 --------
+  2MP camera
+  720p - 1268x720
+  360p - 634x360
+
   APP: Hololens Remoting Player
 
   Settings | Devices | Bluetooth | On
