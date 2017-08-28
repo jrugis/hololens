@@ -11,6 +11,12 @@ git count-objects -vH
 
 ***************************************************
 ***************************************************
+onedrive
+  right_click | embed
+    extract "https ... ", change "embed" to "download" 
+
+***************************************************
+***************************************************
 Blender 2.78
   mesh object, without material
   export fbx | Main | Selected Objects | Mesh
@@ -63,7 +69,7 @@ Edit | Project Settings | Quality
 
 Edit | Project Settings | Player
   Other Settings | Configuration | Scripting Backend | .NET
-  Publishing Settings | Capabilities | WebCam, Microphone
+  Publishing Settings | Capabilities | WebCam, Microphone, Internet
   Universal Windows Platform | XR Settings
     Virtual Reality Supported
     Virtual Reality SDks
@@ -104,13 +110,12 @@ Window | Lighting | Settings
     Color | 0.4 | Realtime
 
 MS Visual Studio
-  Package.appxmanifest | Capabilities | Microphone
+  Package.appxmanifest | Capabilities | Microphone, Internet
 
 ***************************************************
 ***************************************************
 Hololens
 --------
-
   APP: Hololens Remoting Player
 
   Settings | Devices | Bluetooth | On
